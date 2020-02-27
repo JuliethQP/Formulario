@@ -7,40 +7,28 @@
     
 }
 
-@media (max-width:50%){
-    body {
-    
-        background-size: cover;
-    }
-   
 
-}
-@media (max-width:390px)
+
+@media (max-width:300px)
 {
-    .contenedor .survey-form{
     
-        .contenedor .survey-form{
-            width: 60%;
-        }
+   .contenedor-global{
      
-        
-    }
-}
-@media (max-width:914px){}
-
-@media (max-width:914px)
-{
-    .title{
-        width: 60%;
-        text-align: center;
-    }
-   
+       display: wrap;
+   }
     .menu-recomendation{
         justify-content: justify;
     }
+    .title{
+        display: flex;
+        flex-direction: column;
+        font-size:9px;
+        text-align: center;
+    }
+   
   
    
-    .comentario input{
+    .tex{
         width: 10%;
         height: 30%;
      
@@ -67,58 +55,63 @@
 }
 
 
-body{
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient( 20deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url('descarga.jpg');
-    background-repeat: no-repeat;
-  
-    background-position: center;
-    background-size: cover;  
-   
-}
+
 main{
     font-family: 'IBM Plex Sans' ;
+    width: 100%;
+   
+   
     
 }
 .title {
+    display: flex;
+    flex-direction: column;
     width: 20%;
     padding-top: 2%;
     margin:0 auto;
     text-align: center;
-    font-weight: 400;
+   
     line-height: 1.2;
     font-family: 'IBM Plex Sans' ;
-    justify-content: center;
+ 
 }
-title p{
-   text-align: center;
+.title strong{
+    font-size: 34px;
 }
-.contenedor {
-    width: 100%;
-    padding-bottom: 2%;
 
-   text-align: center;
+.contenedor-global {
+    display: flex;
+    flex-direction: column;
+   width: 100%;
+    padding-bottom: 2%;
+   height: 100%;
+   background-image: linear-gradient( 20deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url('descarga.jpg');
+   background-repeat: no-repeat;
+ 
+   background-position: center;
+   background-size: cover;  
    
    
     
 }
+.contenedor{
+    text-align: center;
+}
 .contenedor .survey-form
 {
   border-color:1px soli black;
+  padding-right: 15px;
   padding-left: 15px;
   padding-top: 15px;
   padding-bottom: 2%;
   height: 1200%;
+ justify-items: center;
 
 }
 .survey-form{
     
     margin-left: 30%;
     margin-right: 30%;
-
-   
-   
     background:linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) );
     border: 2px solid white;
 }
@@ -197,15 +190,17 @@ title p{
     box-shadow:0 1 1 gray;
 }
 .menu-recomendation{
+    width: 98% ;
     text-align: left;
     padding-top: 15px;
+    display: table;
+    
 }
-.menu-recomendation fieldset{
-   width: 98% ;
-    border-radius: 5px;
-    box-shadow:0 1 1 gray;
-    display: flex;
+.menu-recomendation label{
+    display:block ;
 }
+
+
 .recomen{
     text-align: left;
     padding-top: 25px;
@@ -221,7 +216,7 @@ title p{
     padding-top: 25px;
     width: auto;
 }
-.comentario input{
+.comentario textarea{
     width: 98%;
     padding-bottom: 50px;
     border-radius: 5px;

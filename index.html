@@ -6,128 +6,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
     <link rel="stylesheet" href="estilos.css">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|ZCOOL+QingKe+HuangYou&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="validar.js"></script>
 </head>
 
 <body>
-  <div>
-      
-  </div>
-   
-    <header class="title">
-        <h1><b> FreeCodeCamp Survey Form </b> </h1>
-        <p id="description">Gracias por tomarte el tiempo para ayudar a mejorar la plataforma</p>
+    <div class="contenedor-global">
+        <header class="title">
+            <strong>Free Code Camp Survey Form</strong>
+            <p id="description">Gracias por tomarte el tiempo para ayudar a mejorar la plataforma</p>
 
-    </header>
-    
+        </header>
 
-    <main>
-        
-        <section class="contenedor">
 
-        
-            <form class="survey-form" action="" onsubmit="return validar();">
-        
-                <div class="name" >
-                    <p>Name</p>
-                    <input id="name"  placeholder="Enter your Name" id="name-label" type="text" required>
-                </div>
-        
-                <div class="email" >
-                    <p>Email</p>
-                    <input id="email" placeholder="Email" id="email-label" type="text" required>
-        
-                </div>
-        
-                <div class="number" >
-                    <p>Number</p>
-                    <input  id="number" placeholder="Number" id="number-label" type="text" required>
-        
-                </div>
-        
-                <div class="age" >
-                    <p>Age</p>
-                    <input  id="age" placeholder="Age" type="number" required>
-                </div>
-                <div class="date" >
-                    <p>Date</p>
-                    <input id="date" type="date">
-                </div>
-                <div class="menu-role" id="dropdown">
-                    <p>¿Which option best describes your current role?</p>
-        
-                    <select  class="role" name="role" data-="Selec current role ">
-                        <fieldset >
+        <main>
+
+            <section class="contenedor">
+
+
+                <form class="survey-form" action="" onsubmit="return validar();">
+
+                    <div class="name">
+                        <p>Name</p>
+                        <input id="name" placeholder="Enter your Name" id="name-label" type="text" required>
+                    </div>
+
+                    <div class="email">
+                        <p>Email</p>
+                        <input id="email" placeholder="Email" id="email-label" type="text" required>
+
+                    </div>
+
+                    <div class="number">
+                        <p>Number</p>
+                        <input id="number" placeholder="Number" id="number-label" type="text" required>
+
+                    </div>
+
+                    <div class="age">
+                        <p>Age</p>
+                        <input id="age" placeholder="Age" type="number" required>
+                    </div>
+                    <div class="date">
+                        <p>Date</p>
+                        <input id="date" type="date">
+                    </div>
+                    <div class="menu-role" id="dropdown">
+                        <p>¿Which option best describes your current role?</p>
+
+                        <select id="role" class="role" name="role" data-="Selec current role ">
+
                             <option selected value="Select-current-role" disabled> Select current role </option>
                             <option value="Student" aria-required="">Student</option>
                             <option value="full-time-Job" aria-required="">full time Job</option>
-                            <option value=" full-time-Leader"> full time Leader</option>
-                            <option value=" Prefer-not-to-say">Prefer not to say</option>
+                            <option value=" full-time-Leader" aria-required=""> full time Leader</option>
+                            <option value=" Prefer-not-to-say" aria-required="">Prefer not to say</option>
+
+
+
+                        </select>
+                    </div>
+
+                    <div class="menu-recomendation" id="menu-recomendation">
+                        <p> Would you recommend freeCodeCamp to a friend?</p>
+                        <label>
+
+                            <input name="A" for="" name="" type="radio"> Definitely</input>
+                         
+
+                        </label>
+                        <label for="">
+                            <input name="A" for="" type="radio"> Maybe</input>
+                           
+                        </label>
+                        <label for="">
+                            <input name="A" for="" type="radio"> Not sure</input>
+                        </label>
+                    
+                        
+
+                    </div>
+
+                    <div class="recomen" id="recomen">
+
+                        <p>
+                            What would you like to see improved? (Check all that apply)
+
+                        </p>
+
+                        <fieldset>
+                            <label name="see" class=" Front-end Projects"><input name="see" type="checkbox"> Front-end
+                                Projects</label>
+                            <label name="see" for="" class="Back-end-Projects"><input name="see" type="checkbox">Back-end
+                                Projects</label>
+                            <label name="see" for="" class="Data-Visualization"><input name="see" type="checkbox">Data
+                                Visualization</label>
+                            <label name="see" for="" class="Challenges"><input  name="see" type="checkbox">Challenges</label>
+                            <label name="see" for="" class="Open-Source-Community"><input name="see" type="checkbox">Open Source
+                                Community</label>
+                            <label name="see" for="" class="Gitter-help-rooms"><input name="see" type="checkbox">Gitter help
+                                rooms</label>
+                            <label name="see" for="" class="Videos"><input name="see" type="checkbox">Videos</label>
+                            <label name="see" for="" class="City-Meetups"><input name="see" type="checkbox">City Meetups</label>
+                            <label name="see" for="" class="Wiki"><input name="see" type="checkbox">City Meetups</label>
+                            <label name="see" for="" class="Forum"><input name="see" type="checkbox">Forum</label>
+                            <label name="see" for="" class="Additional Courses"><input name="see" type="checkbox">Additional
+                                Courses</label>
+
+
                         </fieldset>
-        
-        
-                    </select>
-                </div>
-                <div class="menu-recomendation" id="menu-recomendation">
-                    
-                        <p>Would you recommend freeCodeCamp to a friend?</p>
-                    <fieldset>
-                        <label for="" class="Definitely"><input type="radio">Definitely</label>
-                        <label for="" class="Maybe"><input type="radio">Maybe</label>
-                        <label for="" class="Not-sure"><input type="radio">Not sure</label>
-                    </fieldset>
-        
-        
-        
-                </div>
-                <div class="recomen" id="recomen">
-                
-                    <p>
-                        Would you recommend freeCodeCamp to a friend?(Check all that apply)
-                    </p>
-                
-                    <fieldset>
-                        <label for="" class=" Front-end Projects"><input type="checkbox"> Front-end Projects</label>
-                        <label for="" class="Back-end-Projects"><input type="checkbox">Back-end Projects</label>
-                        <label for="" class="Data-Visualization"><input type="checkbox">Data Visualization</label>
-                        <label for="" class="Challenges"><input type="checkbox">Challenges</label>
-                        <label for="" class="Open-Source-Community"><input type="checkbox">Open Source Community</label>
-                        <label for="" class="Gitter-help-rooms"><input type="checkbox">Gitter help rooms</label>
-                        <label for="" class="Videos"><input type="checkbox">Videos</label>
-                        <label for="" class="City-Meetups"><input type="checkbox">City Meetups</label>
-                        <label for="" class="Wiki"><input type="checkbox">City Meetups</label>
-                        <label for="" class="Forum"><input type="checkbox">Forum</label>
-                        <label for="" class="Additional Courses"><input type="checkbox">Additional Courses</label>
-                
-                
-                    </fieldset>
-                
-                </div>
 
-                <div class="comentario" id="comentario">
-                    <p>Any comments or suggestions?</p>
-                    <textarea name="" id="" cols="60" rows="7" placeholder="Enter you comment here"></textarea>
-                   
-                    
-                </div>
+                    </div>
 
-                <br>
+                    <div class="comentario" id="comentario">
+                        <p>Any comments or suggestions?</p>
+                        <textarea id="textarea" cols="60" rows="7" placeholder="Enter you comment here"></textarea>
 
-                <div class="boton"> 
-                    <button id="submit" type="button" class="btn btn-primary btn-lg" onclick="validar()">    Submit    </button>
-                </div>
-               
-                
-               
-        
-            </form>
-        
-       
-    </section>
 
-    </main>
+                    </div>
+
+                    <br>
+
+                    <div class="boton">
+                        <button id="submit" type="button" class="btn btn-primary btn-lg" onclick="validar()"> Submit
+                        </button>
+                    </div>
+
+
+
+
+                </form>
+
+
+            </section>
+
+        </main>
+
+
+
+    </div>
 </body>
+
+
 
 </html>
