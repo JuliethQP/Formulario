@@ -16,7 +16,7 @@ function validar() {
 
     expresion = /\w+@\w+\.+[a-z]/;
 
-   /* if (name_label == "" || email_label == "" || number_label == "" || age == "" || role == null || role == 0 || textarea=="") {
+    if (name_label == "" || email_label == "" || number_label == "" || age == "" || role == null || role == 0 || textarea=="") {
         alert("Hay campos vacios");
     }
     else if (Number(name_label)) {
@@ -36,7 +36,7 @@ function validar() {
         alert('Error, rellena el campo: Would you recommend freeCodeCamp to a friend?');
         hasError=true;
 
-    }*/
+    }
 
     if (!document.querySelector('input[name="see"]:checked')){
 
