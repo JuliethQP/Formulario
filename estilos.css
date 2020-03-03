@@ -9,7 +9,7 @@
 
 
 
-@media (max-width:300px)
+@media (max-width:400px)
 {
     
    .contenedor-global{
@@ -22,7 +22,7 @@
     .title{
         display: flex;
         flex-direction: column;
-        font-size:9px;
+        font-size:12px;
         text-align: center;
     }
    
